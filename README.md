@@ -3,7 +3,7 @@
 MinecraftBotnet is a project developed to create an automated botnet which propagates through phishing emails. The target audience would be unexperienced users that play Minecraft.
 
 > [!CAUTION]
-> **DISCLAIMER: This project was done for educational purposes. We are not responsible for the use you give it.**
+> **DISCLAIMER: This project was made for educational purposes. We are not responsible for the use you give it.**
 
 ## Structure
 
