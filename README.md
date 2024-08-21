@@ -1,21 +1,21 @@
 # MALW-MinecraftBotnet
 
-MinecraftBotnet is a project develop to create an automated botnet which propagate though phishing emails. The target audience would be unexperienced people that plays Minecraft. This project was develop as Assignment during the Malware's subject of the Master's degree in Cybersecurity (UPC).
+MinecraftBotnet is a project developed to create an automated botnet which propagates through phishing emails. The target audience would be unexperienced users that play Minecraft.
 
 > [!CAUTION]
 > **DISCLAIMER: This project was done for educational purposes. We are not responsible for the use you give it.**
 
 ## Structure
 
-This project was divided in 5 sections that focuses in different aspects of the botnet guts.
+This project was divided in 5 sections that focuses in different aspects of the botnet.
 
-1. [API](/API/): Simple webserver API which will provide all available files to be downloaded and shedule each machine, inside the botnet, to execute the desired tasks.
+1. [API](/API/): Simple webserver API which will provide all available files to be downloaded and schedule each machine, inside the botnet, to execute the desired tasks.
 1. [InfectPE](/InfectPE/): This folder contains a self-version program which allows to inject shellcode into any executable via the creation of a new section. Original version [InfectPE](https://github.com/secrary/InfectPE).
 1. [Malware](/Malware/): Main program that executes in the victim's computer.
-1. [Payload](/Payload/): The shellcode script that will be injected into the executable, and another c++ script that will be downloaded by the shellcode, in charge of setting up the malware in victim's computer.
+1. [Payload](/Payload/): The shellcode script that will be injected into the executable, and another c++ script that will be downloaded by the shellcode, in charge of setting up the malware in the victim's computer.
 1. [Scripts](/Scripts/): This folder contains the task that is executed by the malware.
 
-## Intruction:
+## Instructions:
 
 ### Compiling shellcode and mainDownloader
 Maindownloader:
@@ -41,10 +41,10 @@ Payload (shellcode):
 > You can use any other alternative to ouput the shellcode from an excutable.
 
 > [!WARNING]
-> We have encountered several errors with the gcc distribution. To compile the MainDownloader, we have used the `LLVM` distribution; however, for the shellcode part we have used `MinGW` distribution.
+> We have encountered several errors with the gcc distribution. To compile the MainDownloader, we have used the `LLVM` distribution; however, for the shellcode part we have used `MinGW`.
 
 > [!IMPORTANT]
-> You will need gcc, gcc for mutiplatform (32 bits), and nasm installed.
+> You will need gcc for mutiplatform (32 bits) and nasm installed.
 
 ### Compiling the tasks
 * `$ cd /Scripts`
